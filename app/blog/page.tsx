@@ -1,3 +1,4 @@
+import { Experiences } from 'app/components/experiences'
 import { BlogPosts } from 'app/components/posts'
 
 export const metadata = {

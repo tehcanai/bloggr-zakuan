@@ -1,19 +1,28 @@
 import { BlogPosts } from 'app/components/posts'
+import { Experiences } from './components/experiences'
+import { ArrowIcon } from './components/footer'
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Arif Zakuan
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`Hi, I'm a software developer based in Malaysia. I'm currently working with react, typescript, and dart for work and personal projects and learning new things as I go along.`}
       </p>
-      <div className="my-8">
+      <Experiences />
+      <a
+        className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://github.com/vercel/next.js"
+      >
+        <p className="mt-4 mb-4 text-2xl font-semibold pr-2">Work</p>
+        <ArrowIcon />
+      </a>
+      <p className="mb-4 mt-4 text-2xl font-semibold">Blog</p>
+      <div className="">
         <BlogPosts />
       </div>
     </section>
