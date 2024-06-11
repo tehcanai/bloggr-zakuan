@@ -25,12 +25,12 @@
     --sh-string: #0fa295;
   }
   html {
-    color-scheme: dark;
   }
 }
 
 html {
   min-width: 360px;
+  opacity: 100%;
 }
 
 .gradient {
