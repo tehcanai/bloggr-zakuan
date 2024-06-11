@@ -4,8 +4,8 @@ import { Works } from "app/components/works";
 import { getWorks } from "./utils";
 
 export const metadata = {
-  title: "Blog",
-  description: "Read my blog.",
+  title: "Work",
+  description: "Check out my work.",
 };
 
 export default function Page() {
