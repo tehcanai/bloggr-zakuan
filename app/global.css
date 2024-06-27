@@ -31,7 +31,8 @@
 html {
   min-width: 360px;
   opacity: 100%;
-  background-color: #101010;
+  color: black;
+  background-color: rgb(229, 231, 235);
 }
 
 .gradient {
@@ -67,7 +68,6 @@ html {
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
   content: "#";
 }
 
@@ -99,7 +99,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4;
 }
 
 .prose h1 {
@@ -162,4 +162,11 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

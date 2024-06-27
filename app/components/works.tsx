@@ -6,6 +6,7 @@ type WorkElem = {
   title: string;
   src: string;
   projectSrc?: string;
+  invert?: boolean;
 };
 
 type Prop = {
@@ -16,7 +17,7 @@ type Prop = {
 export function Works({ isFront = false, works }: Prop) {
   const max = isFront ? 1 : works.length;
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-wrap space-y-4 md:space-y-0">
       {works.slice(0, max).map((work) => {
         return (
           <div
@@ -27,13 +28,14 @@ export function Works({ isFront = false, works }: Prop) {
             }}
           >
             <Image
-              className={`pt-2 opacity-100 md:opacity-25 ${
+              className={`pt-2 mr-8 ${
                 work.projectSrc ? "hover:cursor-pointer" : ""
-              } hover:opacity-100`}
+              } ${work.invert ? "invert" : ""} opacity-90 grayscale`}
               src={work.src}
               alt={work.title}
-              width={500}
-              height={200}
+              width={300}
+              height={300}
+              objectFit="cover"
             />
           </div>
         );

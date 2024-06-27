@@ -12,9 +12,6 @@ export default function Page() {
   const works = getWorks();
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        My Projects
-      </h1>
       <Works works={works} />
     </section>
   );
