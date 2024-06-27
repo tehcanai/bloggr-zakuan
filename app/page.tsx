@@ -14,7 +14,7 @@ export default function Page() {
       <div className="mb-4 flex flex-wrap items-end space-x-2">
         <h1 className="text-4xl font-semibold">Arif Zakuan</h1>
         <h1 className="text-lg font-light text-neutral-700 italic tracking-tighter">
-          (software developer, hobbyist artist)
+          (full-time software developer, part-time poet)
         </h1>
       </div>
       {/* <p className="mb-4">
@@ -27,8 +27,8 @@ export default function Page() {
       </div>
       {/* <p className="mb-8 mt-8 text-2xl font-semibold">sample projects</p>
       <Works works={works} /> */}
-      <p className="mb-8 mt-8 text-2xl font-semibold">sample artworks</p>
-      <Works works={artWorks} />
+      {/* <p className="mb-8 mt-8 text-2xl font-semibold">sample artworks</p>
+      <Works works={artWorks} /> */}
       {/* <div className="flex flex-wrap flex-row space-x-4">
         <Link
           className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
