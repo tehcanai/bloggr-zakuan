@@ -14,17 +14,17 @@ export default function Page() {
       <div className="mb-4 flex flex-wrap items-end space-x-2">
         <h1 className="text-4xl font-semibold">Arif Zakuan</h1>
         <h1 className="text-lg font-light text-neutral-700 italic tracking-tighter">
-          (full-time software developer, part-time poet)
+          (full-time software developer)
         </h1>
       </div>
       {/* <p className="mb-4">
         {`Hi, I'm a software developer based in Malaysia. I'm currently working with react, typescript, and dart for work and personal projects and learning new things as I go along.`}
       </p> */}
       <Experiences />
-      <p className="mb-4 text-2xl font-semibold">writings</p>
+      {/* <p className="mb-4 mt-4 text-2xl font-semibold">writings</p>
       <div className="">
         <BlogPosts />
-      </div>
+      </div> */}
       {/* <p className="mb-8 mt-8 text-2xl font-semibold">sample projects</p>
       <Works works={works} /> */}
       {/* <p className="mb-8 mt-8 text-2xl font-semibold">sample artworks</p>
