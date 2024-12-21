@@ -51,7 +51,7 @@ export function Experiences() {
         <p className="mb-4 mt-4 text-2xl font-semibold">skills</p>
         <div className="grid grid-cols-2 py-2 md:items-center space-y-2">
           <p className="text-neutral-900 font-medium">{"languages:"}</p>
-          <p>{"javascipt, typescript, dart, rust, css"}</p>
+          <p>{"javascript, typescript, dart, rust, css"}</p>
           <p className="text-neutral-900 font-medium">{"frameworks:"}</p>
           <p>{"react, nextjs, flutter, react native, expojs, tailwind"}</p>
           <p className="text-neutral-900 font-medium">{"platforms:"}</p>

@@ -47,7 +47,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-black bg-white dark:text-white dark:bg-black eb-garamond"
+        "text-black bg-white dark:text-white dark:bg-black eb-garamond",
       )}
     >
       <head>
@@ -63,13 +63,30 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased max-w-5xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-24 flex flex-col px-2 md:px-0">
-          {/* <Navbar /> */}
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+        <div className="min-h-screen w-full relative">
+          <svg
+            className="fixed inset-0 w-full h-full -z-10 opacity-50"
+            preserveAspectRatio="none"
+            viewBox="0 0 300 300"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <filter id="noiseFilter">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="4.44"
+                numOctaves="5"
+                stitchTiles="stitch"
+              />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+          </svg>
+          <main className="flex-auto min-w-0 mt-24 flex flex-col px-2 md:px-0">
+            {children}
+            <Footer />
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </div>
       </body>
     </html>
   );
